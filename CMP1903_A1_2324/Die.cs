@@ -14,17 +14,22 @@ namespace CMP1903_A1_2324
          * and one method that rolls the die, returns and integer and takes no parameters.
          */
 
+        /// <summary>
+        /// This class should contain one property to hold the current die value,
+        /// and one method that rolls the die, returns and integer and takes no parameters.
+        /// </summary>
+        /// <returns></returns>
+
         //Property
         
-        public int dieValue { get; set; }
+        public int DieValue { get; set; }
         static Random rnd = new Random();
 
         //Method
-        public int dieRoll()
+        public int DieRoll()
         {
-            dieValue = rnd.Next(1, 7);
-            return dieValue;
+            DieValue = rnd.Next(1, 7);
+            return DieValue;
         }
-
     }
 }
